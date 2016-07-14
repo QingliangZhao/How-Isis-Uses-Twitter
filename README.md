@@ -12,7 +12,7 @@ The data contained
 
 One of the things I like to do is examine temporal aspects of data.  Questions like “How many tweets were made during the first month?” and “What is the general trend as time progresses?” are questions that can be answered by examining the temporal frequency of the data.  Let’s examine the time series of tweets made.  This will tell us how many tweets were made on a particular day.
 
-![Time Series][https://github.com/Dpananos/How-Isis-Uses-Twitter/blob/master/time_series.pdf]
+![Time Series][images/time_series.pdf?raw=True]
 
 Wow! Activity really picks up in the early weeks of 2016. Then there is some erratic behaviour in the later parts of the data. I wonder why that could be?  Perhaps they are tweeting about an ISIS attack?  Without looking at the text (a problem for future analysis) it is hard to say without attack data.  Fortunately, I managed to find the dates of major ISIS attacks.  Let’s overlay the dates of major attacks on the time series data.
 
