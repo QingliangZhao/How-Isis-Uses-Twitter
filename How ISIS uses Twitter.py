@@ -14,7 +14,6 @@ import matplotlib as mpl
 import re
 import numpy as np
 from scipy import signal
-get_ipython().magic(u'matplotlib inline')
 
 # Some nice plotting params
 mpl.rcParams['figure.figsize'] = (8,5)
@@ -53,7 +52,7 @@ ax = time_series.plot()
 ax.margins(None,0.1)
 ax.set_xlabel('Date')
 ax.set_ylabel('No. of Tweets')
-plt.savefig('time_series.pdf')
+plt.savefig('images/time_series.png')
 
 
 # In[7]:
@@ -86,7 +85,7 @@ ax.plot(paris,isis_attacks['Major Attacks'].ix[paris],color = 'w',
 ax.legend(numpoints = 1, loc = 'upper left')
 ax.set_xlabel('Date')
 ax.set_ylabel('No. of Tweets')
-plt.savefig('Attacks.pdf')
+plt.savefig('images/Attacks.png')
 
 
 # In[6]:
@@ -109,7 +108,7 @@ oscillations = time_series.ix['2016-01-31':]
 ax = oscillations.plot()
 ax.set_xlabel('Date')
 ax.set_ylabel('No. of Tweets')
-plt.savefig('osci.pdf')
+plt.savefig('images/osci.png')
 
 
 
@@ -130,7 +129,7 @@ ax = plt.gca()
 ax.grid(True)
 ax.set_yticklabels([])
 ax.set_xlabel('No. of Days')
-plt.savefig('periodo.pdf')
+plt.savefig('images/periodo.png')
 
 
 # In[21]:
