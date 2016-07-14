@@ -4,11 +4,12 @@
 
 I was able to obtain a nice little dataset from [Kaggle](https://www.kaggle.com/) containing some tweets and metadata from known Pro-ISIS twitter users.  My thesis used twitter as a main source of information, and so this dataset begged for some analysis.
 
-The data contained
-	* The user’s username
-	* The content of the tweet
-	* The time the tweet was posted
-	* And other associated metadata
+The data contained:
+
+* The user’s username
+* The content of the tweet
+* The time the tweet was posted
+* And other associated metadata
 
 One of the things I like to do is examine temporal aspects of data.  Questions like “How many tweets were made during the first month?” and “What is the general trend as time progresses?” are questions that can be answered by examining the temporal frequency of the data.  Let’s examine the time series of tweets made.  This will tell us how many tweets were made on a particular day.
 
