@@ -16,7 +16,7 @@ import numpy as np
 from scipy import signal
 
 # Some nice plotting params
-mpl.rcParams['figure.figsize'] = (8,5)
+mpl.rcParams['figure.figsize'] = (5,3)
 mpl.rcParams['lines.linewidth'] = 3
 plt.style.use('ggplot')
 
