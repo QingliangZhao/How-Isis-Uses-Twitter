@@ -16,11 +16,11 @@ import numpy as np
 from scipy import signal
 
 # Some nice plotting params
-mpl.rcParams['figure.figsize'] = (5,3)
+mpl.rcParams['figure.figsize'] = (8,5)
 mpl.rcParams['lines.linewidth'] = 3
 plt.style.use('ggplot')
 
-
+plt.close('all')
 # In[2]:
 
 #Read in the data.  Seems like the dates are the second last column
@@ -52,6 +52,7 @@ ax = time_series.plot()
 ax.margins(None,0.1)
 ax.set_xlabel('Date')
 ax.set_ylabel('No. of Tweets')
+plt.tight_layout()
 plt.savefig('images/time_series.png')
 
 
@@ -85,6 +86,8 @@ ax.plot(paris,isis_attacks['Major Attacks'].ix[paris],color = 'w',
 ax.legend(numpoints = 1, loc = 'upper left')
 ax.set_xlabel('Date')
 ax.set_ylabel('No. of Tweets')
+plt.tight_layout()
+
 plt.savefig('images/Attacks.png')
 
 
@@ -108,6 +111,8 @@ oscillations = time_series.ix['2016-01-31':]
 ax = oscillations.plot()
 ax.set_xlabel('Date')
 ax.set_ylabel('No. of Tweets')
+plt.tight_layout()
+
 plt.savefig('images/osci.png')
 
 
@@ -137,6 +142,8 @@ plt.savefig('images/periodo.png')
 #Looks like the signal has a frequency of 7 days, suggesting that there are a bunch of tweets happening weekly.  
 # Ok, well, on what day do they occur?
 
+
+plt.figure()
 
 # In[30]:
 
@@ -168,6 +175,8 @@ r.weekday.mode()
 
 
 # In[ ]:
+
+plt.show()
 
 
 
